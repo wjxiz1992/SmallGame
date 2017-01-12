@@ -52,7 +52,7 @@ class GameModel {
             }
             
         }
-            
+        times! -= 1
     }
     
     init(times: Int) {
