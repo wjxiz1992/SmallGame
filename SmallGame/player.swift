@@ -11,10 +11,10 @@ import Foundation
 
 class Player {
     
-    var name : String?
-    var gesture : Gesture?
+    var name = ""
+    var gesture : Gesture? = nil
     
-    private func randomGesture() {
+    func randomGesture() {
         let randomNumber = arc4random_uniform(3)
         switch randomNumber{
         case 0:

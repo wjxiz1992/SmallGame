@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmA-c2-KiJ">
-                                <frame key="frameInset" minX="215" minY="323" width="11" height="21"/>
+                                <frame key="frameInset" minX="215" minY="323" width="55" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -67,6 +67,9 @@
                                 <frame key="frameInset" minX="264" minY="190" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="gameStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dt7-V7-DDr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enemy gesture：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m06-D9-10K">
                                 <frame key="frameInset" minX="42" minY="252" width="132" height="21"/>
@@ -93,11 +96,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="enemyGestureDisplay" destination="9Fk-hx-vLK" id="5tE-wC-TRP"/>
                         <outlet property="scoresDisplay" destination="gmA-c2-KiJ" id="L0W-pO-N8k"/>
+                        <outlet property="timesInsert" destination="nK9-EJ-FJx" id="Pib-qI-B4K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="42.728635682158924"/>
         </scene>
     </scenes>
 </document>
