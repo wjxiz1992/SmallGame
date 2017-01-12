@@ -9,15 +9,23 @@
 import Foundation
 
 
-class player {
+class Player {
+    
     var name : String?
-    var score : Int?
-    var gesture : Gesture? {
-        get {
-            return self.gesture!
-        }
-        set (newGesture){
-            self.gesture = newGesture
+    var gesture : Gesture?
+    
+    private func randomGesture() {
+        let randomNumber = arc4random_uniform(3)
+        switch randomNumber{
+        case 0:
+            gesture = Gesture.rock
+        case 1:
+            gesture = Gesture.paper
+        case 2:
+            gesture = Gesture.scissors
+        default:
+            break
         }
     }
+    
 }
