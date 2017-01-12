@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmallGame/GameModel.swift"
-            timestampString = "505940254.083345"
+            timestampString = "505943783.252092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "getResult(player1_gesture:player2_gesture:)"
             landmarkType = "7">
          </BreakpointContent>

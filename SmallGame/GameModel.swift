@@ -16,7 +16,7 @@ class GameModel {
     var player1_score : Int?
     var player2_score : Int?
     
-    
+ 
     
     func getResult(player1_gesture: Gesture, player2_gesture: Gesture) -> Void {
         switch player1_gesture {
@@ -56,7 +56,10 @@ class GameModel {
     }
     
     init(times: Int) {
+        self.times = times
+        for _ in 0 ..< times{
         
+        }
     }
 }
     

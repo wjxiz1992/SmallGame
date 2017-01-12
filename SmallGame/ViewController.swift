@@ -10,11 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func giveGesture(_ sender: AnyObject) {
+        
+        let gesture = sender.currentTitle!
+        print("player1 gives \(gesture)")
+        
+    }
+    
+    @IBOutlet weak var scoresDisplay: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
+
+
+     
         
         
         
